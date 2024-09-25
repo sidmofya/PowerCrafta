@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerCrafta Onboarding</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <section id="welcome-screen" class="screen active">
+    <div class="container">
+      <h1>Welcome to PowerCrafta!</h1>
+      <p>Find the perfect solar energy solution for your home, business, or facility.</p>
+      <button id="start-btn" class="cta-btn">Get Started</button>
+    </div>
+  </section>
+
+  <!-- User Type Selection Screen -->
+  <section id="user-type-screen" class="screen">
+    <div class="container">
+      <h1>What kind of user are you?</h1>
+      <div class="user-types">
+        <div class="user-type-card" data-type="residential">
+          <img src="house-icon.png" alt="Residential">
+          <h3>Residential</h3>
+          <p>Homes, apartments, small offices</p>
+        </div>
+        <div class="user-type-card" data-type="small-business">
+          <img src="storefront-icon.png" alt="Small Business">
+          <h3>Small Business</h3>
+          <p>Small businesses, offices</p>
+        </div>
+        <div class="user-type-card" data-type="hospitality">
+          <img src="hotel-icon.png" alt="Hospitality">
+          <h3>Hospitality</h3>
+          <p>Hotels, lodges, tourism camps</p>
+        </div>
+        <div class="user-type-card" data-type="healthcare">
+          <img src="hospital-icon.png" alt="Healthcare">
+          <h3>Healthcare</h3>
+          <p>Clinics, pharmacies, hospitals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Energy Needs Query Screen (example for Residential) -->
+  <section id="energy-needs-screen" class="screen">
+    <div class="container">
+      <h1>Tell us about your energy needs</h1>
+      <form id="energy-needs-form">
+        <label for="num-rooms">How many rooms do you need to power?</label>
+        <select id="num-rooms">
+          <option value="1-3">1-3</option>
+          <option value="4-6">4-6</option>
+          <option value="7-10">7-10</option>
+        </select>
+
+        <label for="appliances">Do you use heavy appliances like fridges or air conditioning?</label>
+        <input type="checkbox" id="appliances" name="appliances" value="Fridge"> Fridge<br>
+        <input type="checkbox" id="appliances" name="appliances" value="AC"> Air Conditioning<br>
+
+        <label for="outages">How often do you experience power outages?</label>
+        <select id="outages">
+          <option value="rarely">Rarely</option>
+          <option value="weekly">Weekly</option>
+          <option value="daily">Daily</option>
+        </select>
+
+        <button type="button" id="energy-needs-next-btn" class="cta-btn">Next</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
